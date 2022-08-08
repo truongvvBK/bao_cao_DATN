@@ -1,0 +1,37 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+
+\section{Đặt vấn đề}
+\label{section:1.1}
+Hiện nay đồ công nghệ là một phần không thể thiếu trong cuộc sống của mỗi
+người. Do đó, nhu cầu về việc sử dụng đồ công nghệ ngày càng tăng lên dẫn đến nhu cầu về việc mua bán trao đồi đồ công nghệ cũng ngày càng phổ biến hơn, đặc biệt là sau đại dịch Covid 19. Ưu điểm của việc mua bán đồ cũ là người dùng có thể tiếp cận với nhiều mặt hàng công nghệ hiện đại với chi phí rẻ hơn nhiều so với việc mua mới. Ngoài ra, với việc sử dụng đồ cũ chúng ta có thể thoải mái thay đổi trải nghiệm nhiều hãng công nghệ với chi phí phải chăng. Bên cạnh đó, việc trao đổi mua bán đồ cũ còn có ý nghĩa to lớn, giúp tiết kiệm tài sản chung cho toàn xã hội thay vì bỏ đi hàng hóa dư thừa và bảo vệ môi trường.
+
+Nhận ra được nhu cầu trên, bản thân em đã hình thành ý tưởng xây dựng một nền tảng mua bán đồ cũ dành cho mặt hàng công nghệ. Hệ thống là một ứng dụng trên nền tảng web với 3 tác nhân chính: Khách (Guest), Người mua bán (Trader), Quản trị viên (Admin).
+
+Khi được đem vào ứng dụng trong thực tế, hệ thống sẽ đem đến sự tiện lợi cho tất cả các bên sử dụng, tạo ra một nền tảng dễ dàng sử dụng, thuận lợi cho việc tìm kiếm, mua và bán cho người dùng.
+
+\section{Mục tiêu và phạm vi đề tài}
+\label{section:1.2}
+Mục tiêu của đề tài là xây dựng một hệ thống cung cấp các tính năng hữu ích như việc đăng tin, tìm kiếm, mua bán, tượng tác-thương lượng trực tiếp (chat) trên website dành cho người dùng (người mua bán) và quản lý hệ thống (quản trị viên)
+
+Trong phạm vi của đồ án tốt nghiệp, đề tài tập trung vào làm rõ yêu cầu bài toán, phân tích thiết kế hệ thống và cài đặt những tính năng căn bản và phù hợp nhất dành cho 2 tác nhân sử dụng chính của hệ thống qua đó trình bày được cách hoạt động của hệ thống.
+
+\section{Định hướng giải pháp}
+\label{section:1.3}
+Với mục tiêu đáp ứng nhu cầu của người dùng, ứng dụng sẽ cố gắng đáp ứng tối đa các tính năng cần có cũng như tương thích với các thiết bị sử dụng công nghệ thông tin. Tuy nhiên, do thời gian thực hiện đồ án có hạn nên hệ thống sẽ được triển khai trên nền tảng website trước vì có thể được truy cập từ bất kì thiết bị nào. Trong tương lai có thể phát triển thêm trên nền tảng mobile để tối ưu việc truy cập.
+
+Mã nguồn của ứng dụng sẽ chia làm hai phần bao gồm: frontend - hiển thị dữ liệu, tương tác với người dùng, backend – xử lý các nghiệp vụ logic, kết nối với dữ liệu để thực hiện các tính năng; và frontend – hiển thị dữ liệu, tương tácvới người dùng. Phần backend sẽ được xây dựng bằng framework Laravel, sử dụng ngôn ngữ lập trình PHP. Phần frontend sử dụng thư viện ReactJs. Cơ sở dữ liệu sẽ được lưu trữ bằng cơ sở dữ liệu MySql.
+
+\section{Bố cục đồ án}
+\label{section:1.4}
+Những nội dung còn lại của báo cáo đồ án tốt nghiệp bao gồm những phần sau đây:
+
+Chương 2 trình bày khảo sát của người dùng đối với nhu cầu mua bán đồ qua sử dụng, đặc biệt là mặt hàng công nghệ. Đồng thời, thông qua việc khảo sát các nền tảng trao đổi đồ cũ hiện có giúp em có cái nhìn tổng quan về hệ thống, đánh giá được ưu nhược điểm của các nền tảng này. Từ đó, xác định được những chức năng cần có bằng sơ đồ use case và phân tích chúng bằng các đặc tả use case, sơ đồ nghiệp vụ,...  
+
+Chương 3 là chương giới thiệu về những công nghệ sử dụng để đáp ứng những yêu cầu chức năng và phi chức năng của hệ thống. Cụ thể về phía Frontend, ĐATN sẽ giới thiệu về công nghệ ReactJS và thư viện ChakraUI, phía Backend sẽ là mô hình kiến trúc MVC, framework Laravel và hệ quản trị cơ sở dữ liệu MySQL.
+
+Chương 4 trình bày về việc triển khai và phát triển hệ thống, thiết kế kiến trúc chung, sơ đồ lớp sau đó sẽ thực hiện xây dựng mã nguồn của hệ thống. Cụ thể, chương 4 sẽ trình bày chi tiết về mối tương quan giữa các thành phần trong mô hình MVC, các gói tương ứng của chúng. Đồng thời, trong chương này sẽ có mô tả chi tiết về các bảng trong cơ dữ liệu cùng với mối quan hệ giữa các bảng đem lại cái nhìn cụ thể về cơ sở dữ liệu. Một phần không thể thiếu đó chính là các thiết kế về giao diện cũng sẽ được trình bày trong chương này. Dựa trên những thiết kế kể trên, ĐATN sẽ xây dựng hệ thống thực tế đầy đủ các chức năng cơ bản đã đề ra, sau đó sẽ trình bày kết quả kiểm thử, minh họa các chức năng chính đã được thực hiện.
+
+Chương 5 nêu ra vấn đề gặp phải trong quá trình gặp phải và phương pháp giải quyết khó khăn. Đồng thời, trong chương này cũng phân tích trong suốt quá trình thực hiện đồ án tốt nghiệp, những công việc ĐATN đã thực hiện và chưa thực hiện được. Từ đó, em sẽ trình bày các hướng phát triển cho tương lai.
+
+\end{document}

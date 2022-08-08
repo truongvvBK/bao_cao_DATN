@@ -1,0 +1,54 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+\section{Công nghệ chính áp dụng phía Frontend}
+\subsection{ReactJS}
+ReactJS\cite{reactjs} là một opensource được phát triển bởi Facebook, ra mắt vào năm 2013, bản thân nó là một thư viện Javascript được dùng để xây dựng các thành phần (components) UI có tính tương tác cao, có trạng thái và có thể sử dụng lại được. Điều này sẽ giúp hệ thống đáp ứng được yêu cầu: Có khả năng cải tiến, phát triển tính năng mới được để cập ở chương 1.
+
+Một trong những điểm hấp dẫn của ReactJS là thư viện này không chỉ hoạt động trên phía client, mà còn được render trên server và có thể kết nối với nhau. ReactJS so sánh sự thay đổi giữa các giá trị của lần render này với lần render trước và cập nhật ít thay đổi nhất trên DOM. Với lợi thế này, hệ thống sẽ đảm bảo được yêu cầu về tính phản hồi cao, tăng trải nghiệm người dùng. Ngoài ra ReactJS còn rất nhiều lợi ích khi sử dụng:
+\begin{itemize}
+    \item ReactJS giúp cho việc viết các đoạn code Javascript sẽ trở nên dễ dàng hơn vì nó sử dụng một cú pháp đặc biệt đó chính là cú pháp JSX. Thông qua JSX cho phép nhúng code HTML và Javascript.
+    \item ReactJS cho phép Developer phá vỡ những cấu tạo UI phức tạp thành những component độc lập. Developer sẽ không phải lo lắng về tổng thể ứng dụng web, giờ đây Developer dễ dàng chia nhỏ các cấu trúc UI/UX phức tạp thành từng component đơn giản hơn.
+    \item Đi kèm với ReactJS là rất nhiều các công cụ phát triển giúp cho việc debug code một cách dễ dàng hơn 
+    \item Một trong những ưu điểm nữa của ReactJS đó là sự thân thiện với SEO. Hầu như các JS Frameworks không thân thiện với các tìm kiếm mặc dù đã được cải thiện nhiều nhưng dưới sự hỗ trợ của các render dữ liệu trả về dưới dạng web page giúp cho SEO chuẩn hơn.
+\end{itemize}
+\subsection{CharkaUI}
+ ChakraUI\cite{chakra} là một thư viện thành phần đơn giản, module và có thể truy cập được, cung cấp cho bạn tất cả các khối xây dựng cần thiết để xây dựng các ứng dụng React.
+
+ Giao diện người dùng Chakra chứa một tập hợp các component bố cục như Box và Stack giúp bạn dễ dàng tạo kiểu cho các component của mình bằng cách chuyển vào props. Một điều đặc biệt nữa đó là hầu hết các component đều tương thích với chế độ tối.
+
+\section{Công nghệ chính áp dụng phía Backend}
+\subsection{Framework Laravel}
+Laravel\cite{laravel} là một framework hỗ trợ cho ngôn ngữ lập trình PHP, có mã nguồn mở và miễn phí, được xây dựng nhằm hỗ trợ phát triển các phần mềm, ứng dụng theo kiến trúc MVC giúp giảm thiểu đi thời gian làm việc nhưng vẫn đạt tiêu chuẩn tốt
+
+Những lý do khiến Laravel trở nên rộng rãi:
+\begin{itemize}
+    \item Sử dụng các tính năng PHP mới nhất: việc sử dụng Laravel giúp các lập trình viên tiếp cận được tính năng mới nhất mà PHP cung cấp. Hệ thống đóng gói modular và quản lý gói phụ thuộc.
+    \item Nguồn tài nguyên có sẵn vô cùng phong phú, đa dạng tài liệu giúp thân thiện với các lập trình viên.
+    \item Tốc độ xử lý nhanh: Laravel giúp ích trong việc tạo lập trang web hay các dự án lớn trong thời gian ngắn hạn.
+    \item Dễ sử dụng: kể cả khi bạn có kiến thức hạn hẹp về PHP, bạn vẫn có khả năng phát triển trang web một cách nhanh chóng.
+    \item Di chuyển Database dễ dàng: Laravel  cho phép bạn duy trì cấu trúc cơ sở dữ liệu mà không nhất thiết phải tạo lại. Bạn có thể viết mã PHP để kiểm soát dữ liệu thay vì sử dụng SQL. Ngoài ra, bạn cũng có thể khôi phục được những thay đổi gần nhất trong Database.
+    \item Tính bảo mật cao: Laravel  sử dụng PDO để chống lại tấn công SQL Injection và một field token ẩn để chống lại tấn công kiểu CSRF giúp cho người dùng có thể tập trung vào phát triển sản phẩm.
+\end{itemize}
+
+ Với những ưu điểm trên, việc sử dụng framework Laravel sẽ giúp cho hệ thống hoạt động ổn định, tốc độ phản hồi tốt, có khả năng cải tiến và dễ dàng phát triển các tính năng mới.
+\subsection{MySQL}
+MySQL\cite{mysql} là hệ quản trị cơ sở dữ liệu mã nguồn mở Relational Database Management System - RDBMS hiện nay được sử dụng phổ biến trên phạm vi toàn cầu. Hệ quản trị cơ sở dữ liệu này hoạt động dựa trên mô hình tiêu chuẩn là Client - Server. MySQL là một cơ sở dữ liệu SQL.
+
+MySQL có những ưu điểm nổi bật cần phải kế đến:
+\begin{itemize}
+    \item Sở hữu mức độ bảo mật cao giúp MySQL khó có thể bị các hacker tấn công, đảm bảo an toàn cho hoạt động của mỗi website. Bởi thế, việc quản trị dữ liệu cho các web lớn hay nhỏ, với lượng dữ liệu nhiều hay ít đều được hỗ trợ với mức độ an toàn lý tưởng...
+    \item Một ưu điểm không thể thiếu khi đánh giá về MySQL chính là tốc độ nhanh chóng, ấn tượng khi sử dụng. Với tốc độ truy vấn, cũng như khả năng phản hồi dữ liệu ấn tượng thì việc sử dụng MySQL luôn được đánh giá cao, trở thành lựa chọn lý tưởng để nâng cao hiệu quả công việc..
+    \item Việc sử dụng MySQL trực quan, đơn giản và dễ dàng. Bởi thế, nó thích hợp với mọi đối tượng người dùng dù có kiến thức liên quan chuyên sâu tới đâu. Dù là người mới, hay có kinh nghiệm đều có thể ứng dụng MySQL hiệu quả để hỗ trợ tốt cho những yêu cầu, đòi hỏi thực tế trong công việc.
+    \item Là một mã nguồn mở giúp hệ quản trị dữ liệu MySQL khi sử dụng đảm bảo dễ dàng phát triển, mở rộng để đáp ứng tốt cho nhu cầu sử dụng thực tế của con người. Với yêu cầu đa dạng, ngày càng phức tạp trong phát triển và duy trì hoạt động của website thì MySQL với việc dễ dàng mở rộng mang lại sự chủ động trong công việc.
+    \item Với hệ quản trị dữ liệu MySQL khi đưa vào sử dụng giúp người dùng có khả năng tiết kiệm chi phí hiệu quả. Hoàn toàn miễn phí cũng làm nên ưu điểm, lợi ích cho người dùng khi lựa chọn MySQL để đáp ứng cho nhu cầu hầu hết các lập trình viên. Giữa nhiều sự lựa chọn thì cho tới nay MySQL vẫn là hệ quản trị cơ sở dữ liệu được đánh giá cao, được ưa chuộng bậc nhất. Việc thiết kế, phát triển và duy trì hoạt động của từng trang web một cách ổn định nhất đều được đảm bảo tốt.
+\end{itemize}
+\subsection{Firebase}
+Firebase\cite{firebase} chính là một dịch vụ cơ sở dữ liệu được hoạt động ở trên nền tảng đám mây (Cloud). Đi kèm với đó là một hệ thống máy chủ mạnh mẽ của Google. Hệ thống có chức năng chính là giúp cho người dùng có thể lập trình ứng dụng thông qua cách đơn giản hóa những thao tác với các cơ sở dữ liệu. 
+
+Firebase có những Service nổi bật như:
+\begin{itemize}
+    \item Realtime Database: Dịch vụ Realtime database cho phép người dùng lưu trữ và đồng bộ dữ liệu theo thời gian thực. Dịch vụ này được lưu trữ trực tiếp trên iCloud. Trong trường hợp thiết bị trong trạng thái ngoại tuyến thì chúng sẽ sử dụng tới bộ nhớ của thiết bị và tự động đồng bộ lên server khi thiết bị online. Do đó ta hoàn toàn có thể yên tâm về độ tương tác. Chính vì ưu điểm này ĐATN đã lựa chọn Firebase để lưu trữ cho chức năng Chat của hệ thống.
+    \item Authentication: Dịch vụ Authentication cung cấp cho ứng dụng một số phương pháp xác thực thông qua email, mật khẩu, số điện thoại, tài khoản Google, tài khoản Facebook… Với tính năng này, người dùng sẽ dễ dàng xây dựng login mà không cần sử dụng dữ liệu đăng ký riêng.
+    \item Firebase Hosting: Cách thức hoạt động tiếp theo được nhắc đến là Firebase Hosting. Đây là một hoạt động được phân phối thông qua tiêu chuẩn công nghệ bảo mật SSl từ hệ thống mạng CDN. CDN chính là cụm từ viết tắt của Content Delivery Network chính là một mạng lưới máy chủ giúp lưu giữ lại các bản sao của các nội dung tĩnh. Những nội dung tĩnh này nằm ở bên trong website và trực tiếp phân phối đến các máy chủ PoP khác. Mạng lưới của máy chủ CDN được thiết đặt ở khắp nơi trên thế giới. Từ máy chủ Pop – Points of Presence, nguồn dữ liệu sẽ được gửi đi đến những người dùng cuối cùng. 
+\end{itemize}
+\end{document}

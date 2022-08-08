@@ -1,0 +1,28 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+\section{Giải pháp và đóng góp nổi bật}
+\subsection{Hệ thống cho phép chat Real-time giữa người dùng}
+\subsubsection{Đặt vấn đề}
+Khi thực hiện trao đổi mua bán trên hệ thống, việc liên lạc giữa người mua và người bán là điều rất quan trọng. Điều này quyết định đến phần lớn tỉ lệ một sản phẩm có được thực hiện giao dịch hay không. Để tăng sự thuận lợi trong việc giao tiếp giữa các người dùng với nhau, yêu cầu đặt ra là hệ thống cần phải có một chức năng chat Real-time tạo thuận lợi cho việc trao đổi, thương lượng một mặt hàng được đăng lên.
+\subsubsection{Giải pháp và kết quả đạt được}
+Để chọn được phương thức phù hợp, em đã tham khảo nhiều những phương thức phổ biến và chọn ra những phương thức khả thi đối với công nghệ mà project đang sử dụng là Broadcasting của Laravel và Firebase.
+
+Ban đầu em đã thử triển khai bằng cách sử dụng chức năng Broadcasting của Laravel và đã đạt được một số kết quả nhất định như là đã có thể chat giữa người dùng với nhau. Nhưng về sau khi làm thêm chức năng hiển thị số tin nhắn chưa đọc thì em đã gặp phải khá nhiều lỗi. Phương thức này sử dụng kĩ thuật lắng nghe message gửi từ server lên client mỗi khi có sự kiện xảy ra, khi người dùng sử dụng nhiều tab trình duyệt để chat thì dẫn đến việc lặp tin nhắn do quản lý việc bắt message gửi từ server không tốt, cũng chính vì lý do này mà chức năng hiển thị số tin nhắn chưa đọc cũng rất khó khăn. 
+
+Vì lý do đó, em đã thử triển khai 1 phương án khác đó là sử dụng dịch vụ Firebase của Google. Firebase hỗ trợ những phương thức lắng nghe thời gian thực rất mạnh mẽ, hơn nữa truy vấn cũng rất nhanh. Do đó nó đã giải quyết được những khó khăn mà Broadcasting gặp phải.
+
+\subsection{Hệ thống cho người dùng tìm kiếm bài đăng theo các tiêu chí}
+\subsubsection{Đặt vấn đề}
+Khi hệ thống có nhiều dữ liệu, số lượng bài đăng các phẩm lớn, việc người dùng phải lướt từ trên xuống dưới những bài viết ngẫu nhiên không thống nhất theo một tiêu chí gì gây ra sự bất tiện không hề nhỏ. Để tăng trải nghiệm người dùng, hệ thống cần có chức năng tìm kiếm bài đăng theo các tiêu chí nhất định phù hợp với nhu cầu của người dùng.
+\subsection{Giải pháp}
+Đầu tiên, em tích hợp chức năng tìm kiếm theo "từ khóa" vì đây là cách thức tìm kiếm phổ biến nhất, được nhiều người dùng sử dụng. Khi người dùng nhập từ khóa theo ý muốn, các bài đăng liên quan sẽ được hiển thị. Sau khi khảo sát người dùng, tiêu chí rất được quan tâm khi mua hàng công nghệ đó chính là nhãn hiệu. Chính vì lý do này, em đã thêm chức năng lọc bài đăng theo nhãn hiệu vào hệ thống.
+\section{Kết luận}
+Đồ án "Xây dựng nền tảng trao đổi đồ công nghê cũ" sau một thời gian thực hiện đã tạo ra được một hệ thống đáp ứng được nhu cầu cơ bản mua bán, trao đổi đồ cũ của người dùng. Thông qua hệ thống, người dùng có thể thực hiện việc đăng bán sản phẩm đồ cũ không dùng tới, quản lý những sản phẩm mình bán hoặc tìm kiếm các sản phẩm theo nhu cầu. Người mua và người bán có thể trao đổi thêm thông tin sản phẩm trực tiếp thông qua hệ thống. Ngoài ra, người dùng còn có thể báo cáo các bài đăng có dấu hiệu lừa đảo để bảo vệ quyền lợi cho chính mình. Bên cạnh đó, quản trị viên có khả năng quản lý người dùng, quản lý các bài đăng để đảm bảo tạo ra môi trường tốt nhất để mọi người có thể tham gia mua bán. Đồng thời, hệ thống còn cho phép quản trị viên xem xét các thống kê để có thể đưa ra các chiến dịch quảng cáo có hiệu quả cao nhất.
+
+Hệ thống chạy ổn định trên nhiều trình duyệt khác nhau như Chrome, Firefox, Cốc Cốc,... Các yêu cầu về mặt chức năng và phi chức năng ban đầu đề ra hầu hết đều được đáp ứng. Tuy nhiên, do thời gian có hạn nên việc hiển thị trên thiết bị di động chưa được tối ưu hóa cho tỉ lệ màn hình, người dùng cần phải chuyển chế độ xem bằng desktop trên trình duyệt di động thì mới có thể sử dụng hệ thống một cách tốt nhất.
+
+So sánh với các trang trao đổi đồ cũ khác thì đồ án còn nhiều điểm chưa hoàn thiện. Do thời gian và trình độ kĩ thuật có hạn nên các chức năng của hệ thống còn hạn chế. Tuy nhiên, ĐATN cũng đã đưa ra được một giải pháp mang lại hiệu quả đó là xây dựng được một hệ thống chuyên dụng cho mặt hàng được quan tâm bậc nhất đó là đồ công nghệ. Bên cạnh đó, giao diện của ứng dụng được thiết kế khá trau chuốt, bắt mắt. Hệ thống được xây dựng theo kiểu Single Application Page giúp cho trang web được hoạt động một cách mượt mà, phản hồi nhanh và không bị tình trạng reload lại trang tương đối nhiều như một số nền tảng khác.
+
+\section{Hướng phát triển}
+Như đã đề cập ở trên, các chức năng của hệ thống hiện tại chưa nhiều. Để phục vụ tốt nhất cho nhu cầu người dùng hiện nay, hệ thống nên được phát triển thêm các chức năng tối ưu hơn cho việc mua và bán. Một số chức năng có thể được tích hợp trong tương lai đó là: Cho phép người dùng gửi ảnh khi chat nếu có nhu cầu xem thêm ảnh về sản phẩm, phân loại người bán thành người bán cá nhân hoặc doanh nghiệp để người mua có thể dễ dàng lựa chọn, cho phép người mua và người bán có thể đánh giá sau giao dịch, cho phép người dùng tìm kiếm bằng nhiều tiêu chí hơn, đẩy tin lên đầu trang tìm kiếm bằng cách trả phí,... Ngoài ra, hiện tại hệ thống mới chỉ hỗ trợ trên nền web, trong tương lai hệ thống có thể sẽ được phát triển thêm ứng dụng trên điện thoại giúp người dùng truy cập dễ dàng hơn.
+\end{document}
